@@ -1,0 +1,111 @@
+/* public/styles.css */
+.header {
+
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: white; /* Chỉnh màu chữ nếu cần thiết */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e2e7d8, #bbd4a5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    width: 100vw;
+    flex: 1;
+}
+
+footer {
+    height: 20px;
+    line-height: 1px; /* Đảm bảo nội dung nằm giữa theo chiều cao của footer */
+    padding: 1px;
+    background-color: #141313;
+    color: white;
+}
+
+.form-input{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+}
+.img-hoadao{
+    width: 40vw;
+    height:40vh ;
+    vertical-align: middle;
+}
+form {
+    width: 60vw;
+    gap:10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#title{
+    width: 50%;
+}
+#content{
+    height:20vh;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#blog-list {
+    max-width: 200px;
+    margin-left: 20px;
+    background-color: burlywood;
+  }
+  
+  .blog-post {
+    cursor: pointer;
+    border: 3px solid #1f1717;
+    padding: 5px;
+    margin-bottom: 6px;
+    background-color: rgb(112, 207, 207);
+  }
+  
+  #blog-content {
+    margin-top: 20px;
+    margin-left: 100px;
+    max-width: 70vw;
+    border: 3px solid #1f1717;
+    padding:3px ;
+  }
+  h3{
+    margin-left: 50px;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}

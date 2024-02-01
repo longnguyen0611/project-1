@@ -1,0 +1,53 @@
+<!-- blog-website/view/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <div class="header"><img class="img_header" src="https://cdn-icons-png.flaticon.com/512/7546/7546214.png" alt="" height="100px" weight="auto"><h1>Blog Website</h1></div> 
+    <div class="new_blog"><h2>Tạo blog:</h2></div>
+    <div class="form-input">
+        <div>
+            <form action="/add-blog" method="post">
+                <label for="title">Chủ đề:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="content">Nội dung:</label>
+                <textarea id="content" name="content" required></textarea>
+                <br>
+                <button type="submit">Tạo</button>
+            </form>
+        </div>
+        <div >
+            <img class="img-hoadao" src="./img/hinh-anh-hoa-dao-mua-xuan_102510983.png">
+        </div>
+
+    </div>
+        <label for="title"><h2>Danh sách Blog:</h2></label>
+        <div class="blog-post" id="blog-list"></div>
+        <h3>Nội dung blog:</h3>
+        <div id="blog-content"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./scrip.js"></script>
+<!-- sửa form -->
+        <div id="edit-form" style="display: none;">
+            <h2>Sửa Blog:</h2>
+            <form id="edit-blog-form">
+                <label for="edit-title">Chủ đề:</label>
+                <input type="text" id="edit-title" name="edit-title" required>
+                <label for="edit-content">Nội dung:</label>
+                <textarea id="edit-content" name="edit-content" required></textarea>
+                <button type="submit">Lưu</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Longnguyen</p>
+    </footer>
+</body>
+</html>
